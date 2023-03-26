@@ -1,0 +1,356 @@
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-snap-type: mandatory y;
+    background: #f5deb396;
+}
+
+*{
+    font-family: Agency FB;
+}
+.container{
+    width: 100%;
+    align-items: center;
+    height: 90vh;
+    border: solid 1px white;
+    background-image: url(images/background.jpg);
+    color: white;
+}
+.container .navbar{
+    width: 80vw;
+    margin-left: 10vw;
+    display: flex;
+align-items: center;
+justify-content: center;
+align-content: center;
+    position: relative;
+    margin-top: 50px;
+}
+ .container .navbar ul{
+    display: flex;
+    padding: 10px 50px;
+ }
+ li{
+    list-style-type: none;
+    padding: 0 20px;
+ }
+
+ .atp{
+    position: absolute;
+left: 0;
+}
+
+ .ls{
+    right: 0;
+    position: absolute;
+    
+ }
+ .logo{
+    position: absolute;
+    font-weight: 900;
+ }
+ .signup{
+    border: solid 1px white;
+    padding: 5px 5px 5px 5px ;
+    margin-top: -5px;
+    border-radius: 5px;
+ }
+
+ .legend-buttons{
+    margin-left: 15vw;
+    margin-top: 20vh;
+    position: absolute;
+    width: 50%;
+    justify-content: space-between;
+ }
+
+ .legend h1{
+    font-weight: 100;
+    font-size: 64px;
+ }
+
+.btn{
+    height: 40px;
+    border: solid 1px white;
+    margin-top: -150px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+}
+.b1{
+    background: #ffffff34;
+}
+.b2{
+    background: #2e2ea1;
+    transition: 0.5s;
+}
+
+.b2:hover{
+    background: #ffffff34;
+}
+.explore{
+    position: absolute;
+    margin-top: 68vh;
+     margin-left: 40vw;
+     align-items: center;
+     justify-content: center;
+     align-content: center;
+     text-align: center;
+}
+.explore p{
+    margin-top: 30px;
+    color: #ffffff8c;
+}
+.circle-icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 60px;
+    border: solid 1px white;
+    margin-top: 25px;
+    margin-left: calc(50% - 25px);
+    background: #2e2ea1;
+}
+
+.container2{
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    color: black;
+    margin-top: 70px;
+}
+
+.description{
+    position: relative;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    width: 35%;
+    margin-left: 30%;
+    text-align: center;
+}
+
+.description p{
+    color: #0000007c;
+
+}
+
+.grids{
+    width: 70vw;
+    margin-left: 10vw;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap ;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+.grid{
+    width: 20vw;
+    height: 20vw;
+    margin-top: 30px ;
+    box-shadow: 0px 1.5px 1.5px  #0000005b;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    padding: 0;
+background: #ffffff;
+}
+
+.grid img{
+    width: 100%;
+    height: 60%;
+}
+.grid p{
+    margin-top: -10px;
+    font-size: 14px;
+    color: #0000008c;
+    font-weight: 300;
+}
+.grid h2{
+    font-size: 22px;
+    font-weight: 700;
+}
+.navbar-toggle{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-toggle{
+    position: fixed;
+    z-index:10;
+    z-index: 4;
+    height: 50px;
+    width: 50px;
+    display: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.line{
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #f1f1f1;
+    transition: transform  1s ease-out,
+    opacity 0.1s ease-out;
+}
+.l1{
+    transform: translateY(-10px);
+}
+.l3{
+    transform: translateY(10px);
+}
+
+.nav-toggle.active .l1{
+    transform: translateY(0px) rotate(135deg);
+}
+.nav-toggle.active .l2{
+    opacity: 0;	}
+.nav-toggle.active .l3{
+    transform: translateY(0px) rotate(-135deg);
+}
+nav{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    min-height: 50vh;
+    height: 100vh ;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(255,255,0.5);
+    backdrop-filter: blur(30px);
+    padding: 20px 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    transition: transform 1s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+    transform: translateY(-200vh);
+    z-index: 3;
+    text-align: center;
+}
+nav.active{
+    transform: translateY(0px);
+    display: none;
+}
+
+nav li{
+    padding: 30px;
+    color : white;
+    font-size: 28px;
+font-weight:600;
+text-align: center;
+margin-left: -20px;
+}
+/*Responsive*/
+
+/* Tablet Start */
+@media screen and (max-width : 992px) {
+
+
+    .toggle{
+        display: block;
+    }
+
+    .container .navbar ul{
+        display: none;
+    }
+.legend{
+    width: 100%;
+}
+
+    .legend h1{
+        font-weight: 80;
+        font-size: 50px;
+     }
+    
+     .logo{
+        font-weight: 100;
+        font-size: 60px;
+     }
+
+
+
+        .grid p{
+            font-size:13px;
+            margin-top: 10px;
+        }
+
+
+            .grid{
+                width: 30vw;
+                height: 30vw;
+            }
+
+
+
+            .nav-toggle{
+                display: block;
+            }
+
+            .legend h1{
+                font-weight: 50;
+                font-size: 30px;
+             }
+            /*Tablet End */ 
+
+            nav.active{
+                transform: translateY(0px);
+                display: block;
+            }
+            .explore{
+                display: none;
+             }
+
+}
+   /*Mobile Start */
+@media screen and (max-width : 768px){
+                
+    .grid{
+        width: 90%;
+        height: 90%;
+    }
+    .btn{
+        height: 20px;
+        font-size: 13px;
+        font-weight: 500;
+        color: white;
+    }
+
+    .circle-icon{
+        width: 40px;
+        height: 40px;
+        border-radius: 40px;
+        border: solid 1px white;
+        margin-top: 22px;
+        margin-left: calc(50% - 25px);
+        background: #2e2ea1;
+    }
+
+
+    .legend h1{
+        font-weight: 50;
+        font-size: 26px;
+     }
+
+     .explore{
+        display: none;
+     }
+
+     .container{
+        height: 60vh;
+        background-size: cover;
+     }
+
+    }
