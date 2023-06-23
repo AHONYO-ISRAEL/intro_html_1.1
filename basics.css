@@ -4,6 +4,7 @@ body{
     scroll-behavior: smooth;
     scroll-snap-type: mandatory y;
     background: #f5deb396;
+    overflow-x: hiddden;
 }
 
 *{
@@ -38,7 +39,7 @@ align-content: center;
 
  .atp{
     position: absolute;
-left: 0;
+    left: 0;
 }
 
  .ls{
